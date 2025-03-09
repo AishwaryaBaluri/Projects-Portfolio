@@ -23,27 +23,27 @@ To facilitate comprehensive analysis, I merged the selected datasets into a unif
 - Mapped Reaction Types: Connected Reaction[Type] with ReactionTypes[Type] to standardize reaction categories across the datasets.
 - Linked Content IDs: Associated Content[Content ID] with Reaction[Content ID] to accurately match reactions to their respective content.
 * Below is the final 'Reaction File' showcasing the integrated data model ready for analysis *
-<div align="Center">
+
 ![image](https://github.com/user-attachments/assets/ccc01f37-2033-4372-8404-6df7674bd6e9)
-</div>
+
 
 ### 5. Analytical Processing
 - **Category Analysis:** Used the UNIQUE() function to determine unique content categories, followed by SUMIF() to quantify their popularity based on user scores.
-<div align="Center">  
+
   ![image](https://github.com/user-attachments/assets/1fdab5ad-5180-484d-bd66-b572d1cfa6b4)
-</div>
+
 - **Top Category Identification:** Analysis highlighted the most engaged-with categories: Healthy Eating, Technology, Food, and Cooking, pinpointing areas with the highest user interest
-<div align="Center">
+
   ![image](https://github.com/user-attachments/assets/81964cbf-c96e-4155-88ac-2821177c002c)
-</div>
+
 - **Content Type Reaction Metrics:** A pivot table was used to analyze reactions across different content types, revealing insights into user preferences and content interaction.
-<div align="Center">
+
   <img width="564" alt="image" src="https://github.com/user-attachments/assets/7cc370b9-c6b7-4941-8f83-398e220d751c" />
-</div>
+
 - **Sentiment Impact Evaluation:** Employed another pivot table to assess how different sentiments affect content popularity, crucial for understanding emotional engagement with the content.
-<div align="Center">
+
   <img width="390" alt="image" src="https://github.com/user-attachments/assets/8a05599e-1665-4b06-b804-524f3fbe02b5" />
-</div>
+
 ### Conclusion:
 
 My analysis successfully identified the key content categories driving engagement and contributing to IPO readiness. I discovered that categories such as **Healthy Eating, Technology, Food, and Cooking** were the most popular among users, indicating strong preferences for content that either provides practical information or enhances lifestyle quality.
