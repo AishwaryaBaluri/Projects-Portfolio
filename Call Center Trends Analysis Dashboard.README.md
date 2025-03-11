@@ -4,9 +4,9 @@
 The aim of this project is to create a dynamic Power BI dashboard for a leading telecom company to unveil what truly drives customer satisfaction and agent effectiveness. 
 By integrating KPIs such as overall customer satisfaction, call response metrics, and agent performance analytics, the dashboard will serve as a decisive tool for understanding consumer demands and optimizing call center operations. This initiative directly supports strategic decision-making by providing clarity on key aspects like call handling efficiency and service quality across different customer segments.
 ## Detailed Project Workflow
-### 1. Data Loading:
+### 1. Data Loading
 I imported the dataset from Excel into Power BI Desktop, setting the stage for a detailed analysis. This step involved loading comprehensive call center operation data to explore trends and performance metrics effectively.
-### 2. Data Transformation:
+### 2. Data Transformation
 **Data Type Adjustment:** I verified and adjusted the data types of all columns to ensure compatibility and accuracy in analysis.
 
 | Field                 | Data Type      |
@@ -56,7 +56,7 @@ Calls_UnResolved = CALCULATE(COUNT('call center Dataset'[Resolved]),'call center
 ```DAX
 Overall_CustomerSatisfaction = DIVIDE(COUNTROWS(FILTER('call center Dataset','call center Dataset'[Satisfaction rating] >=4)), COUNTROWS('call center Dataset'),0)
 ```
-### 4. KPI Integratio:
+### 4. KPI Integration
 I integrated these DAX measures as Key Performance Indicators (KPIs) within the dashboard. This allows for professional and organized reporting, giving stakeholders a clear view of operational metrics and their implications.
 
 ### 5. Slicers
