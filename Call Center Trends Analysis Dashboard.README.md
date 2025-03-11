@@ -7,7 +7,7 @@
 ## 📈 Goal 
 The aim of this project is to create a dynamic Power BI dashboard for a leading telecom company to unveil what truly drives customer satisfaction and agent effectiveness. 
 By integrating KPIs such as overall customer satisfaction, call response metrics, and agent performance analytics, the dashboard will serve as a decisive tool for understanding consumer demands and optimizing call center operations. This initiative directly supports strategic decision-making by providing clarity on key aspects like call handling efficiency and service quality across different customer segments.
-## Detailed Project Workflow
+## 🎢 Detailed Project Workflow
 1. [Data Loading](#data-loading)
 2. [Data Transformation](#data-transformation)
 3. [DAX Measures](#dax-measures)
@@ -81,7 +81,7 @@ Gauge visuals were incorporated to depict the progress of average customer satis
 ### <ins>Chart Visuals
  incorporated a range of charts into the Power BI dashboard, each specifically designed to meet the unique analytical needs of the company. As depicted in the visual examples, these charts transform complex data sets into clear, intuitive formats. This approach not only enhances the accessibility of the data but also facilitates a deeper understanding, enabling users to quickly grasp key insights and make informed decisions based on comprehensive visual evidence.
  
-## Conclusion
+## ✍️ Conclusion
 
 The Call Center Trends Analysis Dashboard meticulously tracks performance metrics, revealing that of 5,000 total calls, 4,054 were successfully answered, while 946 went unanswered, indicating areas needing improvement. The resolution rate stood strong at approximately 73%, underscoring effective call handling. However, overall customer satisfaction was recorded at 40.46%, signaling opportunities for enhancing service strategies. Monthly trends showed consistent call volume and resolution rates, ensuring operational stability. Variations in agent performance suggest a need for focused training or procedural changes to improve consistency and service quality.
 
