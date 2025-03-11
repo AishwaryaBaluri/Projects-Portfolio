@@ -1,23 +1,31 @@
-# Top Categories Contributing to the Success of an IPO
-## Goal
+<h1 style="text-decoration: underline;"> Top Categories Contributing to the Success of an IPO</h1>
+
+##  📈 Goal
 The goal of this project is to identify and analyze the top content categories that significantly contribute to the success of an Initial Public Offering (IPO). By utilizing data analysis techniques in Excel, this project aims to generate insights that will inform strategic decision-making for Social Buzz, ensuring the company is well-prepared to execute a successful IPO.
+
 ## Detailed Project Workflow
-### 1. Understanding the Business Requirement
+1. [Understanding the Business Requirement](#understanding-the-business-requirement)
+2. [Requirement Gathering](#requirement-gathering)
+3. [Data Cleaning and Preparation](#data-cleaning-and-preparation)
+4. [Integrative Data Modeling](#integrative-data-modeling)
+5. [Analytical Processing](#analytical-processing)
+   
+### Understanding the Business Requirement
 The initial step involves a deep analysis of the project requirements. Social Buzz is preparing for an IPO and needs expertise to analyze their content categories based on user engagement to optimize their offerings. Clear objectives are set to focus on data that impacts user interactions and company growth.
-### 2. Requirement Gathering
+### Requirement Gathering
 There are total seven distinct datasets, encompassing various aspects of user interaction and content dynamics. However, upon analyzing the project requirements, it became apparent that not all datasets were necessary for analysis on content category popularity. To streamline our efforts and ensure the precision of the insights, I selected only three datasets that are directly relevant to user interactions and content engagement metrics: **Reaction**, **Reaction Type**, **Content**.
   
   *Below is a snapshot of the data model used to integrate and analyze these three datasets effectively:*
 ![image](https://github.com/user-attachments/assets/8f6fc40f-7c00-40a7-8fe6-da2bb5c49b81)
 
-### 3. Data Cleaning and Preparation
+### Data Cleaning and Preparation
 Key steps in data cleaning included:
 
 - Eliminating records with missing or incomplete data.
 - Standardizing data formats across columns to ensure uniformity.
 - Removing unnecessary columns to focus exclusively on those that contribute to content engagement analysis, such as **Unique_ID, Content ID, Reaction Type, Datetime, Sentiment, Score, and Content Type.**
 
-### 4. Integrative Data Modeling
+### Integrative Data Modeling
 To facilitate comprehensive analysis, I merged the selected datasets into a unified 'Reaction File'. This integration was achieved using Excel’s VLOOKUP() function for precise data alignment:
 
 - Mapped Reaction Types: Connected Reaction[Type] with ReactionTypes[Type] to standardize reaction categories across the datasets.
@@ -27,7 +35,7 @@ To facilitate comprehensive analysis, I merged the selected datasets into a unif
 ![image](https://github.com/user-attachments/assets/ccc01f37-2033-4372-8404-6df7674bd6e9)
 
 
-### 5. Analytical Processing
+### Analytical Processing
 - **Category Analysis:** Used the UNIQUE() function to determine unique content categories, followed by SUMIF() to quantify their popularity based on user scores.
 
   ![image](https://github.com/user-attachments/assets/1fdab5ad-5180-484d-bd66-b572d1cfa6b4)
