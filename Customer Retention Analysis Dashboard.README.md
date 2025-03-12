@@ -160,3 +160,9 @@ This dashboard section delves deep into the patterns and trends identified throu
 
 
 ## ✍️ Conclusion
+
+-**Churn Analysis Page:** Highlights the overall churn rates and breaks them down by demographic segments, showcasing how different factors such as age, gender, and service types impact customer retention.
+
+-**Risk Analysis Page:** Focuses on predicting future churn by analyzing current customer behaviors and service usage patterns, allowing preemptive actions to be taken.
+
+-**Interactive Features:** Users can interact with various slicers and controls to delve into specific datasets, making the dashboard not only a tool for viewing data but also a powerful analysis tool for predictive insights.
