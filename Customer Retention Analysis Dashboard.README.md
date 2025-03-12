@@ -25,75 +25,75 @@ Removing duplicates, filling or removing missing values, and correcting inconsis
 ### <ins>DAX Measures
 Critical DAX measures were developed to perform dynamic and complex calculations directly within the Power BI environment, which include:
 
-#### Churn Metrics:
+#### CHURN METRICS:
 These measures calculate the total number of churned and retained customers, segmented by various factors such as service type and contract length.
 
-*Total Churned Customers:*
+**Total Churned Customers:**
 ```DAX
   Total_Churned = CALCULATE(COUNTROWS('01 Churn-Dataset'), '01 Churn-Dataset'[Churn]="Yes")
 ```
-*Total Retained Customers:*
+**Total Retained Customers:**
 ```DAX
 Total_Retained = CALCULATE(COUNTROWS('01 Churn-Dataset'), '01 Churn-Dataset'[Churn]="No")
 ```
 
-*Churn by Service Type:*
+**Churn by Service Type:**
 ```DAX
 Churn_By_Service = CALCULATE(COUNTROWS('01 Churn-Dataset'), '01 Churn-Dataset'[Service]="ServiceName", '01 Churn-Dataset'[Churn]="Yes")
 ```
 
-*Churn by Contract Length:*
+**Churn by Contract Length:**
 ```DAX
 Churn_By_Contract = CALCULATE(COUNTROWS('01 Churn-Dataset'), '01 Churn-Dataset'[ContractLength]="ContractType", '01 Churn-Dataset'[Churn]="Yes")
 ```
 
-*Churn Admin Tickets:*
+**Churn Admin Tickets:**
 ```DAX
   Churn_Admintickets = CALCULATE(SUM('01 Churn-Dataset'[numAdminTickets]), '01 Churn-Dataset'[Churn]="Yes")
 ```
 
-*Churn Tech Tickets:*
+**Churn Tech Tickets:**
 ```DAX
 Churn_Techtickets = CALCULATE(SUM('01 Churn-Dataset'[numTechTickets]), '01 Churn-Dataset'[Churn]="Yes")
 ```
 
-*Customers at Risk:*
+**Customers at Risk:**
 ```DAX
 Customers at risk = COUNTX(FILTER('01 Churn-Dataset', '01 Churn-Dataset'[Churn]="Yes"), '01 Churn-Dataset'[Churn])
 ```
 
-*Customers Retained:*
+**Customers Retained:**
 ```DAX
 CustomersRetained = COUNTX(FILTER('01 Churn-Dataset', '01 Churn-Dataset'[Churn]="No"), '01 Churn-Dataset'[Churn])
 ```
 
 
-#### Risk Metrics:
+#### RISK METRICS:
 These measures focus on identifying risk factors for churn based on demographic traits, service usage patterns, and customer service interactions.
 
-*Risk by Demographics:*
+**Risk by Demographics:**
 ```DAX
   Demographic_Risk = CALCULATE(COUNTROWS('01 Churn-Dataset'), '01 Churn-Dataset'[Demographic]="DemographicType", '01 Churn-Dataset'[Churn]="Yes")
 ```
 
-*Risk by Service Usage:*
+**Risk by Service Usage:**
 ```DAX
 Service_Usage_Risk = CALCULATE(COUNTROWS('01 Churn-Dataset'), '01 Churn-Dataset'[ServiceUsed]="ServiceType", '01 Churn-Dataset'[Churn]="Yes")
 ```
 
-*Risk by Support Tickets:*
+**Risk by Support Tickets:**
 ```DAX
 Support_Ticket_Risk = CALCULATE(COUNTROWS('01 Churn-Dataset'), '01 Churn-Dataset'[TicketType]="TechSupport", '01 Churn-Dataset'[Churn]="Yes")
 ```
 
-*Dependents Percentage Churned:*
+**Dependents Percentage Churned:**
 ```DAX
 Dependents_Percentage_Churned = DIVIDE(
       COUNTROWS(FILTER('01 Churn-Dataset', '01 Churn-Dataset'[Dependents] = "Yes" && '01 Churn-Dataset'[Churn] = "Yes")),
       COUNTROWS(FILTER('01 Churn-Dataset', '01 Churn-Dataset'[Churn] = "Yes"))
 ```
 
-*Device Protection Percentage:*
+**Device Protection Percentage:**
 ```DAX
 DeviceProtection_Per = DIVIDE(
     COUNTROWS(FILTER('01 Churn-Dataset', '01 Churn-Dataset'[DeviceProtection] = "Yes")),
@@ -101,7 +101,7 @@ DeviceProtection_Per = DIVIDE(
 )
 ```
 
-*Gender-Based Churn Percentage:*
+**Gender-Based Churn Percentage:**
 ```DAX
 Female_Percentage_Churned = DIVIDE(
     COUNTROWS(FILTER('01 Churn-Dataset', '01 Churn-Dataset'[gender] = "Female" && '01 Churn-Dataset'[Churn] = "Yes")),
@@ -114,12 +114,12 @@ Male_Percentage_Churned = DIVIDE(
 ) * 100
 ```
 
-*Monthly Charges for Churned Customers:*
+**Monthly Charges for Churned Customers:**
 ```DAX
 Monthly_Charge = CALCULATE(SUM('01 Churn-Dataset'[MonthlyCharges]),'01 Churn-Dataset'[Churn]="Yes")
 ```
 
-*Yearly Charges for Churned Customers:*
+**Yearly Charges for Churned Customers:**
 ```DAX
 Yearly_charges = CALCULATE(SUM('01 Churn-Dataset'[TotalCharges]), '01 Churn-Dataset'[Churn]="Yes")
 ```
