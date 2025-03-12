@@ -10,7 +10,9 @@ To develop a detailed and interactive Power BI dashboard to conduct an in-depth 
 1. [Data Loading](#data-loading)
 2. [Data Transformation](#data-transformation)
 3. [DAX Measures](#dax-measures)
-4. [Dashboard Design](#dashboard-design)
+   -[CHURN METRICS](#churn-metrics)
+   -[RISK METRICS](#risk-metrics)
+5. [Dashboard Design](#dashboard-design)
    - [Welcome Page](#welcome-page)
    - [Customer Churn Analysis Page:](#customer-churn-analysis-page)
    - [Risk Analysis Page](#risk-analysis-page)
@@ -34,7 +36,7 @@ Removing duplicates, filling or removing missing values, and correcting inconsis
 ### <ins>DAX Measures
 Critical DAX measures were developed to perform dynamic and complex calculations directly within the Power BI environment, which include:
 
-#### CHURN METRICS:
+#### CHURN METRICS
 These measures calculate the total number of churned and retained customers, segmented by various factors such as service type and contract length.
 
 **Total Churned Customers:**
@@ -77,7 +79,7 @@ CustomersRetained = COUNTX(FILTER('01 Churn-Dataset', '01 Churn-Dataset'[Churn]=
 ```
 
 
-#### RISK METRICS:
+#### RISK METRICS
 These measures focus on identifying risk factors for churn based on demographic traits, service usage patterns, and customer service interactions.
 
 **Risk by Demographics:**
