@@ -11,15 +11,16 @@ To develop a detailed and interactive Power BI dashboard to conduct an in-depth 
 2. [Data Transformation](#data-transformation)
 3. [DAX Measures](#dax-measures)
 4. [Dashboard Design](#dashboard-design)
+5. [Analysis and Insights](#analysis-and-insights)
 
 ### <ins>Data Loading
 The project started by importing the telecom company's customer data into Power BI Desktop. The data set included detailed customer demographics, their service subscriptions, account details, and history of support interactions. Ensuring data integrity and accuracy at this stage was crucial for the reliability of the subsequent analysis.
 
 ### <ins>Data Transformation
 Once loaded, the data underwent a rigorous transformation process:
-#### *Data Type Standardization:* 
+- **Data Type Standardization:** 
 Ensuring all data fields were in correct formats (e.g., dates, categorical and continuous variables) to allow accurate calculations and comparisons.
-#### *Data Cleaning:*
+- **Data Cleaning:**
 Removing duplicates, filling or removing missing values, and correcting inconsistencies to purify the dataset for analysis.
 
 ### <ins>DAX Measures
@@ -124,4 +125,38 @@ Monthly_Charge = CALCULATE(SUM('01 Churn-Dataset'[MonthlyCharges]),'01 Churn-Dat
 Yearly_charges = CALCULATE(SUM('01 Churn-Dataset'[TotalCharges]), '01 Churn-Dataset'[Churn]="Yes")
 ```
 ### <ins>Dashboard Design
+
+The dashboard was designed with a user-centric approach to ensure ease of navigation and interaction:
+
+#### Welcome Page:
+An introductory page with general information on how to navigate the dashboard effectively.
+
+<Div align="Center">
+  <img src="https://github.com/user-attachments/assets/7d5812c1-ac3f-4ad0-b129-351f134c0260" width="100%">
+</Div>
+
+
+
+#### Customer Churn Analysis Page: 
+Visual representations of churn statistics, depicting trends over time, churn by service type, and impact of customer service interactions on churn.
+
+<Div align="Center">
+  <img src="https://github.com/user-attachments/assets/dcd27b6b-adf5-40a6-ba11-adee4a0fe194" width="100%">
+</Div>
+
+#### Risk Analysis Page: 
+Detailed analyses focusing on identifying segments at high risk of churn, with visual filters for users to explore different customer segments and risk factors.
+
+<Div align="Center">
+  <img src="https://github.com/user-attachments/assets/633f59f3-f3de-4b8b-96ac-e5d87181d7c3"  width="100%">
+</Div>
+
+### Analysis and Insights
+This dashboard section delves deep into the patterns and trends identified through the visualizations, offering strategic insights:
+
+-**Proactive Interventions:** Based on the identified high-risk segments, suggesting targeted interventions that the retention team can initiate to reduce churn.
+
+-**Customer Segmentation:** Highlighting specific demographic and service-related attributes that contribute to higher churn rates, allowing for customized retention strategies.
+
+
 ## ✍️ Conclusion
