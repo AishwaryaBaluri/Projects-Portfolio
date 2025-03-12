@@ -11,7 +11,10 @@ To develop a detailed and interactive Power BI dashboard to conduct an in-depth 
 2. [Data Transformation](#data-transformation)
 3. [DAX Measures](#dax-measures)
 4. [Dashboard Design](#dashboard-design)
-5. [Analysis and Insights](#analysis-and-insights)
+   - [Welcome Page](#welcome-page)
+   - [Customer Churn Analysis Page:](#customer-churn-analysis-page)
+   - [Risk Analysis Page](#risk-analysis-page)
+6. [Analysis and Insights](#analysis-and-insights)
 
 ### <ins>Data Loading
 The project started by importing the telecom company's customer data into Power BI Desktop. The data set included detailed customer demographics, their service subscriptions, account details, and history of support interactions. Ensuring data integrity and accuracy at this stage was crucial for the reliability of the subsequent analysis.
@@ -133,7 +136,7 @@ Yearly_charges = CALCULATE(SUM('01 Churn-Dataset'[TotalCharges]), '01 Churn-Data
 
 The dashboard was designed with a user-centric approach to ensure ease of navigation and interaction:
 
-#### Welcome Page:
+#### Welcome Page
 An introductory page with general information on how to navigate the dashboard effectively.
 
 <Div align="Center">
@@ -142,14 +145,14 @@ An introductory page with general information on how to navigate the dashboard e
 
 
 
-#### Customer Churn Analysis Page: 
+#### Customer Churn Analysis Page 
 Visual representations of churn statistics, depicting trends over time, churn by service type, and impact of customer service interactions on churn.
 
 <Div align="Center">
   <img src="https://github.com/user-attachments/assets/dcd27b6b-adf5-40a6-ba11-adee4a0fe194" width="100%">
 </Div>
 
-#### Risk Analysis Page: 
+#### Risk Analysis Page
 Detailed analyses focusing on identifying segments at high risk of churn, with visual filters for users to explore different customer segments and risk factors.
 
 <Div align="Center">
