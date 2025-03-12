@@ -164,9 +164,9 @@ Detailed analyses focusing on identifying segments at high risk of churn, with v
 ### Analysis and Insights
 This dashboard section delves deep into the patterns and trends identified through the visualizations, offering strategic insights:
 
--**Proactive Interventions:** Based on the identified high-risk segments, suggesting targeted interventions that the retention team can initiate to reduce churn.
+- **Proactive Interventions:** Based on the identified high-risk segments, suggesting targeted interventions that the retention team can initiate to reduce churn.
 
--**Customer Segmentation:** Highlighting specific demographic and service-related attributes that contribute to higher churn rates, allowing for customized retention strategies.
+- **Customer Segmentation:** Highlighting specific demographic and service-related attributes that contribute to higher churn rates, allowing for customized retention strategies.
 
 
 ## ✍️ Conclusion
