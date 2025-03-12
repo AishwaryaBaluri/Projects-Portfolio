@@ -23,6 +23,11 @@ Ensuring all data fields were in correct formats (e.g., dates, categorical and c
 - **Data Cleaning:**
 Removing duplicates, filling or removing missing values, and correcting inconsistencies to purify the dataset for analysis.
 
+*Below is the snip of the data transformed
+
+![image](https://github.com/user-attachments/assets/ef29e8fa-6319-4b8b-be86-80522b81c60d)
+
+
 ### <ins>DAX Measures
 Critical DAX measures were developed to perform dynamic and complex calculations directly within the Power BI environment, which include:
 
