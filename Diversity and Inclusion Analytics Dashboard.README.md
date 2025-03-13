@@ -142,7 +142,7 @@ Analyzing promotion trends and highlighting gender equality progress or issues.
   <img src="https://github.com/user-attachments/assets/9692bb9e-fc16-4486-a03d-28b6b2dd7f9e">
 </div>
 
-## 🔍 Key Insights 
+## Key Insights
 Here are the key insights from the Diversity and Inclusion dashboard in concise points:
 - Males received more promotions than females across multiple departments, suggesting the need for equitable promotion policies.
 - Female employees generally had lower performance ratings, indicating possible bias in evaluation processes that need addressing.
