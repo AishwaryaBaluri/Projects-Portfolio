@@ -14,7 +14,7 @@ Develop a Power BI dashboard to analyze and visualize Diversity and Inclusion da
     - [Welcome Page](#welcome-page)
     - [Gender Analysis](#gender-analysis)
     - [Promotion Insights](#promotion-insights)
-5. [Key Insights](key-insights)
+5. [Key Insights](#key-insights)
 ### <ins>Data Loading
 Loaded HR dataset into Power BI, encompassing demographics, employment histories, performance ratings, and promotion records.
 
